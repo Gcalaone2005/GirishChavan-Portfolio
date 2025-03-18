@@ -106,6 +106,31 @@
     color: #ffcc00;
 }
 
+/* Button Navigation Section */
+.button-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 15px;
+    margin: 40px 0;
+}
+
+.button-container button {
+    background: #ff6600;
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    font-size: 1rem;
+    font-weight: bold;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+.button-container button:hover {
+    background: #cc5500;
+}
+
 /* Sections */
 section {
     padding: 60px 10%;
@@ -150,16 +175,17 @@ ul li {
 #contact a:hover {
     color: #0056b3;
 }
+
 /* Footer Styles */
 footer {
     background: #222; /* Dark background */
     color: white; /* Text color */
     text-align: center;
     padding: 15px 0;
-    position: relative;
-    bottom: 0;
     width: 100%;
     font-family: Arial, sans-serif;
+    position: relative; /* Allows flexibility in placement */
+    bottom: 0;
 }
 
 .footer-content p {
@@ -172,12 +198,3 @@ footer {
     font-size: 0.9rem;
     opacity: 0.8;
 }
-footer {
-            background: #333;
-            color: white;
-            text-align: center;
-            padding: 10px;
-            position: fixed;
-            bottom: 0;
-            width: 100%;
-        }
