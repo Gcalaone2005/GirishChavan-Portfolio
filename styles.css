@@ -1,100 +1,162 @@
 /* General Styles */
-body {
-    font-family: 'Arial', sans-serif;
+* {
     margin: 0;
-    background: linear-gradient(135deg, #f9c74f 0%, #f3722c 100%);
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background-color: #f4f4f4;
     color: #333;
+    line-height: 1.6;
 }
 
-.container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    max-width: 1200px;
-    margin: auto;
-    padding: 20px;
+/* Header Section */
+header {
+    background: linear-gradient(135deg, #ff7e5f, #d9463e);
+    color: white;
+    text-align: center;
+    padding: 60px 20px;
+}
+
+header h1 {
+    font-size: 2.5em;
+    margin-bottom: 10px;
+}
+
+header p {
+    font-size: 1.2em;
+}
+
+.contact-info {
+    margin-top: 20px;
+}
+
+.contact-info button {
     background: white;
-    border-radius: 8px;
-    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    color: #d9463e;
+    border: none;
+    padding: 10px 15px;
+    margin: 10px;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 1em;
+    font-weight: bold;
+    transition: background 0.3s ease;
 }
 
-/* Header Styles */
-.header {
+.contact-info button:hover {
+    background: #ffe0d4;
+}
+
+/* Navigation */
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin-top: 20px;
     text-align: center;
 }
 
-.header h1 {
-    font-size: 2.5rem;
-    margin-top: 0;
+nav ul li {
+    display: inline;
+    margin: 10px;
 }
 
-.header nav {
-    margin-top: 20px;
-}
-
-.header nav a {
-    margin: 0 15px;
+nav ul li a {
     text-decoration: none;
-    color: #333;
-    font-weight: bold;
-}
-
-/* Profile Section */
-.profile {
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    margin-top: 30px;
-}
-
-.profile img {
-    border-radius: 50%;
-    width: 150px;
-    height: 150px;
-    object-fit: cover;
-    border: 4px solid #f9c74f;
-}
-
-.profile h2 {
-    margin: 15px 0 5px 0;
-    font-size: 2rem;
-}
-
-.profile h3 {
-    color: #555;
-    font-size: 1.2rem;
-}
-
-/* Button Styles */
-.buttons {
-    margin-top: 20px;
-}
-
-.button {
-    background-color: #f3722c;
     color: white;
-    border: none;
-    padding: 10px 20px;
-    margin: 0 5px;
+    font-weight: bold;
+    font-size: 1.1em;
+    padding: 8px 12px;
     border-radius: 5px;
-    font-size: 1rem;
-    cursor: pointer;
     transition: background 0.3s;
 }
 
-.button:hover {
-    background-color: #d95d00;
+nav ul li a:hover {
+    background: rgba(255, 255, 255, 0.2);
 }
 
-/* Footer Style */
-.footer {
-    margin-top: 40px;
+/* Sections */
+.container {
+    max-width: 800px;
+    margin: 40px auto;
+    padding: 30px;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
     text-align: center;
+    color: #d9463e;
+    margin-bottom: 20px;
 }
 
-.footer a {
+/* Skills Section */
+.skill-list {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.skill {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-weight: bold;
+}
+
+.progress {
+    width: 60%;
+    height: 10px;
+    background: #ddd;
+    border-radius: 5px;
+    overflow: hidden;
+    position: relative;
+}
+
+.progress div {
+    height: 100%;
+    background: #d9463e;
+    transition: width 1s ease-in-out;
+}
+
+/* Hobbies & Interests */
+ul {
+    list-style-type: none;
+    padding-left: 20px;
+}
+
+ul li {
+    padding: 8px 0;
+    font-size: 1.1em;
+}
+
+/* Contact Section */
+#contact p {
+    text-align: center;
+    font-size: 1.1em;
+    font-weight: bold;
     color: #333;
-    margin: 0 10px;
-    font-size: 1.2rem;
+}
+
+#contact a {
+    color: #d9463e;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+#contact a:hover {
+    text-decoration: underline;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 20px;
+    background: #222;
+    color: white;
+    margin-top: 20px;
+    font-size: 0.9em;
 }
