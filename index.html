@@ -9,13 +9,18 @@
 <body>
     <header>
         <h1>Girish Chavan</h1>
-        <p>Aspiring Full Stack Developer | Web Enthusiast</p>
+        <p>Hello, I'm an Aspiring Full Stack Developer</p>
+        <div class="contact-info">
+            <button onclick="window.location.href='resume.pdf'">Download CV</button>
+            <button onclick="window.scrollTo({top: document.getElementById('contact').offsetTop, behavior: 'smooth'})">Contact Info</button>
+        </div>
         <nav>
             <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="projects.html">Projects</a></li>
-                <li><a href="#skills">Skills</a></li>
-                <li><a href="#hobbies">Hobbies & Interests</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#hobbies">Hobbies</a></li>
+                <li><a href="#interests">Interests</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
         </nav>
@@ -28,71 +33,69 @@
 
     <section id="skills">
         <h2>Technical Skills</h2>
-        <div class="skill">
-            <span>JavaScript</span>
-            <div class="progress-bar">
-                <div class="progress" style="width: 80%;"></div>
+        <div class="skill-list">
+            <div class="skill">
+                <span>JavaScript</span>
+                <div class="progress-bar">
+                    <div class="progress" style="width: 80%;"></div>
+                </div>
             </div>
-        </div>
-        <div class="skill">
-            <span>PHP</span>
-            <div class="progress-bar">
-                <div class="progress" style="width: 75%;"></div>
+            <div class="skill">
+                <span>PHP</span>
+                <div class="progress-bar">
+                    <div class="progress" style="width: 75%;"></div>
+                </div>
             </div>
-        </div>
-        <div class="skill">
-            <span>HTML & CSS</span>
-            <div class="progress-bar">
-                <div class="progress" style="width: 90%;"></div>
+            <div class="skill">
+                <span>HTML & CSS</span>
+                <div class="progress-bar">
+                    <div class="progress" style="width: 90%;"></div>
+                </div>
             </div>
-        </div>
-        <div class="skill">
-            <span>C, C++</span>
-            <div class="progress-bar">
-                <div class="progress" style="width: 70%;"></div>
+            <div class="skill">
+                <span>C, C++</span>
+                <div class="progress-bar">
+                    <div class="progress" style="width: 70%;"></div>
+                </div>
             </div>
-        </div>
-        <div class="skill">
-            <span>MySQL</span>
-            <div class="progress-bar">
-                <div class="progress" style="width: 80%;"></div>
+            <div class="skill">
+                <span>MySQL</span>
+                <div class="progress-bar">
+                    <div class="progress" style="width: 80%;"></div>
+                </div>
             </div>
-        </div>
-        <div class="skill">
-            <span>Flask/Django</span>
-            <div class="progress-bar">
-                <div class="progress" style="width: 60%;"></div>
+            <div class="skill">
+                <span>Flask/Django</span>
+                <div class="progress-bar">
+                    <div class="progress" style="width: 60%;"></div>
+                </div>
             </div>
-        </div>
-        <div class="skill">
-            <span>AI Tools</span>
-            <div class="progress-bar">
-                <div class="progress" style="width: 70%;"></div>
+            <div class="skill">
+                <span>AI Tools</span>
+                <div class="progress-bar">
+                    <div class="progress" style="width: 70%;"></div>
+                </div>
             </div>
         </div>
     </section>
 
     <section id="hobbies">
         <h2>Hobbies</h2>
-        <div class="hobby-list">
-            <ul>
-                <li>Listening to Music</li>
-                <li>Sketching</li>
-                <li>Watching Historical Films</li>
-            </ul>
-        </div>
+        <ul>
+            <li>Listening to Music</li>
+            <li>Sketching</li>
+            <li>Watching Historical Films</li>
+        </ul>
     </section>
 
     <section id="interests">
         <h2>Interests</h2>
-        <div class="interest-list">
-            <ul>
-                <li>Volunteering at Events</li>
-                <li>Web Development</li>
-                <li>App Development</li>
-                <li>History Enthusiast</li>
-            </ul>
-        </div>
+        <ul>
+            <li>Volunteering at Events</li>
+            <li>Web Development</li>
+            <li>App Development</li>
+            <li>History Enthusiast</li>
+        </ul>
     </section>
 
     <section id="contact">
