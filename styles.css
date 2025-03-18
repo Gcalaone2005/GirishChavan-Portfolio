@@ -1,58 +1,62 @@
 body {
-    background: url('background.png') no-repeat center center fixed;
-    background-size: cover;
-    font-family: Arial, sans-serif;
-    color: white;
-    text-align: center;
     margin: 0;
     padding: 0;
+    font-family: Arial, sans-serif;
+    color: white; /* Text color */
+    text-align: center;
 }
 
+/* Background Image with Dark Overlay */
 .container {
-    max-width: 600px;
-    margin: auto;
-    padding: 20px;
-    background: rgba(0, 0, 0, 0.6);
-    border-radius: 10px;
-    margin-top: 100px;
+    position: relative;
+    width: 100%;
+    height: 100vh; /* Full height */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: url('image.png') no-repeat center center/cover;
+}
+
+/* Dark Overlay Effect */
+.container::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6); /* Dark overlay */
+}
+
+/* Content Styling */
+h1, .button-container {
+    position: relative; /* Ensures content stays above overlay */
+    z-index: 1;
 }
 
 h1 {
-    font-size: 28px;
+    font-size: 2.5rem;
+    margin-bottom: 20px;
 }
 
-ul {
-    list-style-type: none;
-    padding: 0;
-}
-
-ul li {
-    font-size: 18px;
-    margin: 10px 0;
+.button-container {
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
 }
 
 button {
-    background-color: #008CBA;
+    background-color: #ff4b5c;
     color: white;
-    border: none;
     padding: 10px 20px;
-    font-size: 16px;
+    border: none;
     cursor: pointer;
-    margin: 10px;
+    font-size: 1rem;
     border-radius: 5px;
+    transition: 0.3s;
 }
 
 button:hover {
-    background-color: #005f73;
-}
-
-a {
-    color: #FFD700;
-    text-decoration: none;
-    display: block;
-    margin-top: 20px;
-}
-
-a:hover {
-    text-decoration: underline;
+    background-color: #e04351;
 }
