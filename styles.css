@@ -172,3 +172,12 @@ footer {
     font-size: 0.9rem;
     opacity: 0.8;
 }
+footer {
+            background: #333;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
