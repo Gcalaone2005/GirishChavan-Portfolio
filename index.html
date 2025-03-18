@@ -12,16 +12,16 @@
             <h1>Girish Chavan</h1>
             <p>Hello, I'm an Aspiring Full Stack Developer</p>
             <div class="contact-info">
-                <button onclick="window.location.href='resume.pdf'">Download CV</button>
-                <button onclick="window.scrollTo({top: document.getElementById('contact').offsetTop, behavior: 'smooth'})">Contact Info</button>
+                <button onclick="window.open('resume.pdf', '_blank')">Download CV</button>
+                <button onclick="window.open('contact.html', '_blank')">Contact Info</button>
             </div>
             <nav>
                 <ul>
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#projects">Projects</a></li>
-                    <li><a href="#hobbies">Hobbies</a></li>
-                    <li><a href="#interests">Interests</a></li>
-                    <li><a href="#contact">Contact</a></li>
+                    <li><button onclick="window.open('about.html', '_blank')">About</button></li>
+                    <li><button onclick="window.open('projects.html', '_blank')">Projects</button></li>
+                    <li><button onclick="window.open('hobbies.html', '_blank')">Hobbies</button></li>
+                    <li><button onclick="window.open('interests.html', '_blank')">Interests</button></li>
+                    <li><button onclick="window.open('contact.html', '_blank')">Contact</button></li>
                 </ul>
             </nav>
         </div>
