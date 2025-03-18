@@ -1,4 +1,7 @@
-/* General Styles */
+/* Google Font Import */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap');
+
+/* Reset Default Styles */
 * {
     margin: 0;
     padding: 0;
@@ -6,104 +9,120 @@
     font-family: 'Poppins', sans-serif;
 }
 
+/* Body Styling */
 body {
-    background-color: #f4f4f4;
+    background-color: #f9f9f9;
     color: #333;
     line-height: 1.6;
 }
 
+/* Container */
+.container {
+    width: 80%;
+    max-width: 1100px;
+    margin: auto;
+    padding: 20px;
+}
+
 /* Header Section */
 header {
-    background: linear-gradient(135deg, #ff7e5f, #d9463e);
-    color: white;
+    background-color: #f1f5f9;
+    padding: 50px 20px;
     text-align: center;
-    padding: 60px 20px;
+    position: relative;
 }
 
 header h1 {
-    font-size: 2.5em;
-    margin-bottom: 10px;
+    font-size: 2.8em;
+    font-weight: 700;
+    color: #1e293b;
 }
 
 header p {
     font-size: 1.2em;
+    color: #475569;
+    margin-bottom: 20px;
 }
 
+/* Buttons */
 .contact-info {
-    margin-top: 20px;
+    margin: 20px 0;
 }
 
 .contact-info button {
-    background: white;
-    color: #d9463e;
+    background: #ef4444;
+    color: white;
     border: none;
-    padding: 10px 15px;
+    padding: 12px 18px;
     margin: 10px;
     cursor: pointer;
-    border-radius: 5px;
     font-size: 1em;
     font-weight: bold;
-    transition: background 0.3s ease;
+    border-radius: 5px;
+    transition: all 0.3s ease;
 }
 
 .contact-info button:hover {
-    background: #ffe0d4;
+    background: #dc2626;
 }
 
 /* Navigation */
 nav ul {
-    list-style-type: none;
-    padding: 0;
+    list-style: none;
+    display: flex;
+    justify-content: center;
     margin-top: 20px;
-    text-align: center;
 }
 
 nav ul li {
-    display: inline;
-    margin: 10px;
+    margin: 0 15px;
 }
 
 nav ul li a {
     text-decoration: none;
-    color: white;
-    font-weight: bold;
+    color: #1e293b;
+    font-weight: 600;
     font-size: 1.1em;
     padding: 8px 12px;
-    border-radius: 5px;
-    transition: background 0.3s;
+    transition: color 0.3s;
 }
 
 nav ul li a:hover {
-    background: rgba(255, 255, 255, 0.2);
+    color: #ef4444;
 }
 
 /* Sections */
-.container {
-    max-width: 800px;
-    margin: 40px auto;
-    padding: 30px;
-    background: white;
-    border-radius: 10px;
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+section {
+    padding: 50px 20px;
+    text-align: center;
 }
 
 h2 {
-    text-align: center;
-    color: #d9463e;
+    font-size: 2.2em;
+    color: #ef4444;
     margin-bottom: 20px;
+}
+
+/* About Section */
+#about p {
+    font-size: 1.1em;
+    color: #475569;
 }
 
 /* Skills Section */
 .skill-list {
     display: flex;
     flex-direction: column;
+    align-items: center;
     gap: 15px;
+    margin-top: 20px;
 }
 
 .skill {
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    width: 80%;
+    max-width: 500px;
     font-weight: bold;
 }
 
@@ -118,31 +137,30 @@ h2 {
 
 .progress div {
     height: 100%;
-    background: #d9463e;
+    background: #ef4444;
     transition: width 1s ease-in-out;
 }
 
 /* Hobbies & Interests */
 ul {
     list-style-type: none;
-    padding-left: 20px;
+    padding-left: 0;
 }
 
 ul li {
-    padding: 8px 0;
+    padding: 10px 0;
     font-size: 1.1em;
 }
 
 /* Contact Section */
 #contact p {
-    text-align: center;
     font-size: 1.1em;
     font-weight: bold;
     color: #333;
 }
 
 #contact a {
-    color: #d9463e;
+    color: #ef4444;
     font-weight: bold;
     text-decoration: none;
 }
