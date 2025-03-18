@@ -150,3 +150,25 @@ ul li {
 #contact a:hover {
     color: #0056b3;
 }
+/* Footer Styles */
+footer {
+    background: #222; /* Dark background */
+    color: white; /* Text color */
+    text-align: center;
+    padding: 15px 0;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    font-family: Arial, sans-serif;
+}
+
+.footer-content p {
+    margin: 5px 0;
+    font-size: 1rem;
+    letter-spacing: 0.5px;
+}
+
+.footer-content p:last-child {
+    font-size: 0.9rem;
+    opacity: 0.8;
+}
