@@ -7,15 +7,58 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <div class="container">
-        <h1>Welcome to My Portfolio</h1>
-        <div class="button-container">
-            <button onclick="location.href='hobbies.html'">Hobbies</button>
-            <button onclick="location.href='about.html'">About</button>
-            <button onclick="location.href='projects.html'">Projects</button>
-            <button onclick="location.href='interests.html'">Interests</button>
-            <button onclick="location.href='contact.html'">Contact</button>
+
+    <header class="hero">
+        <div class="overlay"></div>
+        <div class="hero-content">
+            <h1>Hello, I'm <span>Girish Chavan</span></h1>
+            <p>Welcome to my portfolio. Explore my work and passions!</p>
+            <a href="#about" class="btn">Learn More</a>
+            <a href="resume.pdf" class="btn download-btn" download>Download Resume</a>
         </div>
-    </div>
+    </header>
+
+    <nav class="navbar">
+        <ul>
+            <li><a href="#hobbies">Hobbies</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#interests">Interests</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <section id="about">
+        <h2>About Me</h2>
+        <p>Hi, I'm Girish Chavan.Aspiring Full Stack Developer with expertise in Web Development, DBMS, and AI tools. Passionate
+ about building scalable applications and optimizing business processes through technology. Strong
+ problem-solving skills and a commitment to continuous learning...</p>
+    </section>
+
+    <section id="hobbies">
+        <h2>Hobbies</h2>
+        <ul>
+            <li>Listening to Music</li>
+            <li>Sketching</li>
+            <li>Watching Historical Films</li>
+        </ul>
+    </section>
+
+    <section id="interests">
+        <h2>Interests</h2>
+        <ul>
+            <li>Volunteering at Events</li>
+            <li>Web Development</li>
+            <li>App Development</li>
+            <li> History Enthusiast</li>
+        </ul>
+    </section>
+
+    <section id="contact">
+        <h2>Contact Me</h2>
+        <p>Email: girish@example.com</p>
+        <p>LinkedIn: <a href="#">linkedin.com/in/girish</a></p>
+    </section>
+
 </body>
 </html>
