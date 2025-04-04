@@ -1,28 +1,75 @@
 /* General Styles */
-body {
-    font-family: Arial, sans-serif;
+* {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4; /* Light background for contrast */
+    color: #333;
+}
+
+/* Fixed Navigation Bar */
+nav {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: #222; /* Dark navbar */
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding: 15px 0;
+    z-index: 1000;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.3);
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 8px 16px;
+    border-radius: 4px;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+nav a:hover {
     background-color: #444;
-    color: white;
-    text-align: center;
+    transform: scale(1.05);
+    opacity: 0.9;
 }
 
 /* Header Section */
-h1 {
-    font-size: 48px;
-    font-weight: bold;
+.hero {
+    background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('your-image.jpg') center/cover no-repeat;
+    height: 100vh;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 100px 20px 20px;
 }
 
-h1 span {
+.hero-content h1 {
+    font-size: 3rem;
+}
+
+.hero-content h1 span {
     color: #ffc107;
 }
 
+.hero-content p {
+    font-size: 1.2rem;
+    margin-top: 10px;
+}
+
 /* Resume Download Button */
-.resume-btn {
+.download-btn {
     display: inline-block;
     padding: 12px 25px;
-    background-color: #007bff; /* Blue color */
+    background-color: #007bff;
     color: white;
     font-size: 16px;
     font-weight: bold;
@@ -32,81 +79,37 @@ h1 span {
     transition: background-color 0.3s ease, transform 0.2s ease;
     border: none;
     cursor: pointer;
+    margin-top: 20px;
 }
 
-.resume-btn:hover {
-    background-color: #0056b3; /* Darker Blue */
+.download-btn:hover {
+    background-color: #0056b3;
     transform: scale(1.05);
 }
 
-/* Fixed Navigation Bar */
-.navbar {
-    position: fixed;
-    top: 0;
-    width: 100%;
-    background-color: #222;
-    z-index: 999;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
-}
-
-nav {
-    display: flex;
-    justify-content: center;
-    gap: 20px;
-    padding: 15px 0;
-    flex-wrap: wrap;
-}
-
-nav a {
-    color: #ffa500;
-    text-decoration: none;
-    font-weight: bold;
-    transition: color 0.3s, transform 0.2s;
-}
-
-nav a:hover {
-    color: #fff;
-    transform: scale(1.05);
-}
-
-/* Hero Section */
-.hero {
-    background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('background.jpg') no-repeat center center/cover;
-    color: white;
-    text-align: center;
-    padding: 100px 20px 60px;
-    position: relative;
-    margin-top: 60px; /* offset for fixed nav */
-}
-
-.hero-content h1 span {
-    color: #ffa500;
-}
-
-/* Section Styles */
+/* Sections */
 section {
     max-width: 800px;
-    margin: 30px auto;
-    background-color: #fff;
+    margin: 80px auto;
+    background-color: white;
     padding: 20px;
     border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    scroll-margin-top: 100px;
+    transition: transform 0.3s ease;
 }
 
 section:hover {
     transform: scale(1.01);
 }
 
-/* Section Headers */
 h2 {
-    color: #ff9800;
+    color: #ff6600;
     margin-bottom: 10px;
 }
 
-/* Lists */
 ul {
-    list-style-type: none;
+    list-style: none;
     padding: 0;
 }
 
@@ -114,51 +117,49 @@ li {
     margin: 10px 0;
 }
 
-/* Paragraph */
-p {
-    line-height: 1.6;
+/* Contact Section Links */
+#contact a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+#contact a:hover {
+    text-decoration: underline;
 }
 
 /* Footer */
 footer {
-    background-color: #333;
-    color: white;
+    background-color: #222;
+    color: #ccc;
     text-align: center;
-    padding: 15px 0;
-    margin-top: 40px;
-}
-
-/* Resume Button (if reused here) */
-.resume-btn {
-    display: inline-block;
-    padding: 10px 20px;
-    background-color: #ff9800;
-    color: white;
-    text-decoration: none;
-    font-weight: bold;
-    border-radius: 5px;
-    margin-top: 10px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    transition: background-color 0.3s ease, transform 0.2s ease;
-}
-
-.resume-btn:hover {
-    background-color: #e68900;
-    transform: scale(1.05);
+    padding: 20px 10px;
+    margin-top: 50px;
 }
 
 /* Responsive Design */
-@media screen and (max-width: 768px) {
+@media (max-width: 768px) {
     nav {
-        flex-direction: column;
+        flex-wrap: wrap;
         gap: 10px;
     }
 
-    .hero {
-        padding: 80px 15px 50px;
+    .hero-content h1 {
+        font-size: 2rem;
     }
 
-    section {
-        margin: 20px 10px;
+    .download-btn {
+        padding: 10px 20px;
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 480px) {
+    .hero-content h1 {
+        font-size: 1.5rem;
+    }
+
+    nav a {
+        font-size: 14px;
+        padding: 6px 12px;
     }
 }
