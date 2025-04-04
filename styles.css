@@ -1,88 +1,81 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
+/* General Styles */
 body {
-    font-family: Arial, sans-serif;
-    line-height: 1.6;
+    font-family: 'Arial', sans-serif;
+    background-color: #f9f9f9;
+    color: #333;
+    margin: 0;
 }
 
-.hero {
-    background: url('hero-background.jpg') no-repeat center center/cover;
-    height: 100vh;
-    position: relative;
-    color: white;
-    text-align: center;
+h1, h2, h3 {
+    color: #ff6f20; /* Orange color */
 }
 
-.overlay {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: rgba(0, 0, 0, 0.5);
-}
-
-.hero-content {
-    position: relative;
-    z-index: 2;
-}
-
-.btn {
-    display: inline-block;
-    padding: 10px 20px;
-    margin-top: 20px;
-    background: #ff7f50;
-    color: white;
-    text-decoration: none;
-    border-radius: 5px;
-}
-
+/* Navigation Bar */
 .navbar {
-    background-color: #333;
-}
-
-.navbar ul {
-    list-style-type: none;
     display: flex;
-    justify-content: center;
-    padding: 10px 0;
-}
-
-.navbar li {
-    margin: 0 15px;
+    justify-content: space-around;
+    background-color: #333;
+    padding: 15px 0;
 }
 
 .navbar a {
-    color: white;
     text-decoration: none;
-    padding: 5px 10px;
-}
-
-.section {
-    padding: 20px;
-    margin: 20px 0;
-    background-color: #f4f4f4;
-    border-radius: 5px;
-}
-
-h2 {
-    color: #ff7f50;
-}
-
-.project {
-    background: #fff;
-    padding: 15px;
-    margin: 10px 0;
-    border-radius: 5px;
-}
-
-footer {
-    background: #333;
     color: white;
-    text-align: center;
-    padding: 10px 0;
+    padding: 10px 20px;
+    transition: background 0.3s;
+}
+
+.navbar a:hover {
+    background-color: #ff6f20; /* Hover effect */
+}
+
+/* Main Content */
+.main-content {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.about-section, .hobbies-section {
+    margin: 20px 0;
+}
+
+/* Section Titles */
+.about-section h2, .hobbies-section h2 {
+    margin: 10px 0;
+}
+
+/* Button Styles */
+.button {
+    background-color: #ff6f20; /* Orange Button */
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background 0.3s;
+}
+
+.button:hover {
+    background-color: #e65c17; /* Darker orange */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        padding: 10px 0;
+    }
+
+    .navbar a {
+        margin: 5px 0;
+    }
+
+    .main-content {
+        padding: 10px;
+    }
 }
