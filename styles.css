@@ -5,6 +5,8 @@ body {
     color: #333;
     margin: 0;
     padding: 0;
+    padding-top: 60px; /* Offset for fixed navbar */
+    scroll-behavior: smooth;
 }
 
 /* Header Styles */
@@ -23,7 +25,7 @@ nav {
     display: flex;
     justify-content: center;
     gap: 20px;
-    padding: 10px 0;
+    padding: 15px 0;
     background: rgba(34, 34, 34, 0.9); /* Slight opacity */
     backdrop-filter: blur(5px);
     position: fixed;
@@ -48,7 +50,7 @@ nav a:hover {
     transform: scale(1.05);
 }
 
-/* Floating Button Section */
+/* Floating Buttons Section */
 .floating-buttons {
     display: flex;
     justify-content: center;
@@ -81,6 +83,12 @@ section {
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease-in-out;
+}
+
+section:hover {
+    transform: scale(1.01);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
 }
 
 h2 {
