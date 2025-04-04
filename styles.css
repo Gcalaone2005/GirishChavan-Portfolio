@@ -50,18 +50,22 @@ h1, h2, h3 {
 
 /* Button Styles */
 .button {
-    background-color: #ff6f20; /* Orange Button */
-    color: white;
+    background-color: #ff7f50; /* Coral color */
     border: none;
-    padding: 10px 15px;
-    border-radius: 5px;
-    cursor: pointer;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
     font-size: 16px;
-    transition: background 0.3s;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 5px; /* Rounded corners */
+    transition: background-color 0.3s; /* Smooth transition for hover effect */
 }
 
 .button:hover {
-    background-color: #e65c17; /* Darker orange */
+    background-color: #ff4500; /* Darker Coral on hover */
 }
 
 /* Responsive Design */
