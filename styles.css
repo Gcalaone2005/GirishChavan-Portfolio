@@ -1,85 +1,57 @@
 /* General Styles */
 body {
-    font-family: 'Arial', sans-serif;
-    background-color: #f9f9f9;
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
     color: #333;
     margin: 0;
+    padding: 0;
 }
 
-h1, h2, h3 {
-    color: #ff6f20; /* Orange color */
-}
-
-/* Navigation Bar */
-.navbar {
-    display: flex;
-    justify-content: space-around;
+/* Header Styles */
+header {
     background-color: #333;
-    padding: 15px 0;
+    padding: 10px 0;
+    text-align: center;
 }
 
-.navbar a {
+nav {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+nav a {
+    color: orange;
     text-decoration: none;
-    color: white;
-    padding: 10px 20px;
-    transition: background 0.3s;
+    font-weight: bold;
 }
 
-.navbar a:hover {
-    background-color: #ff6f20; /* Hover effect */
-}
-
-/* Main Content */
-.main-content {
+/* Section Styles */
+section {
     max-width: 800px;
     margin: 20px auto;
-    padding: 20px;
     background-color: white;
-    border-radius: 8px;
+    padding: 20px;
+    border-radius: 5px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
-.about-section, .hobbies-section {
-    margin: 20px 0;
+/* Header Styles for Sections */
+h2 {
+    color: orange;
 }
 
-/* Section Titles */
-.about-section h2, .hobbies-section h2 {
+/* Paragraph Styles */
+p {
+    line-height: 1.6;
+}
+
+/* List Styles */
+ul {
+    list-style-type: none; /* Remove default list styling */
+    padding: 0;
+}
+
+li {
     margin: 10px 0;
-}
-
-/* Button Styles */
-.button {
-    background-color: #ff7f50; /* Coral color */
-    border: none;
-    color: white;
-    padding: 10px 20px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 16px;
-    margin: 4px 2px;
-    cursor: pointer;
-    border-radius: 5px; /* Rounded corners */
-    transition: background-color 0.3s; /* Smooth transition for hover effect */
-}
-
-.button:hover {
-    background-color: #ff4500; /* Darker Coral on hover */
-}
-
-/* Responsive Design */
-@media (max-width: 768px) {
-    .navbar {
-        flex-direction: column;
-        padding: 10px 0;
-    }
-
-    .navbar a {
-        margin: 5px 0;
-    }
-
-    .main-content {
-        padding: 10px;
-    }
 }
