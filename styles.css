@@ -9,49 +9,87 @@ body {
 
 /* Header Styles */
 header {
-    background-color: #333;
+    background-color: #222;
     padding: 10px 0;
     text-align: center;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
 }
 
 nav {
     display: flex;
     justify-content: center;
     gap: 20px;
+    padding: 10px 0;
 }
 
 nav a {
-    color: orange;
+    color: white;
     text-decoration: none;
     font-weight: bold;
+    padding: 10px 15px;
+    transition: 0.3s;
+}
+
+nav a:hover {
+    color: orange;
+}
+
+/* Floating Button Section */
+.floating-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 80px;
+}
+
+.floating-buttons a {
+    background-color: orange;
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 10px;
+    transition: 0.3s;
+}
+
+.floating-buttons a:hover {
+    background-color: #e69500;
 }
 
 /* Section Styles */
 section {
-    max-width: 800px;
+    max-width: 900px;
     margin: 20px auto;
     background-color: white;
     padding: 20px;
-    border-radius: 5px;
+    border-radius: 10px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
-/* Header Styles for Sections */
 h2 {
+    text-align: center;
     color: orange;
+    font-size: 24px;
+    font-weight: bold;
 }
 
-/* Paragraph Styles */
 p {
+    text-align: center;
+    font-size: 16px;
     line-height: 1.6;
 }
 
-/* List Styles */
-ul {
-    list-style-type: none; /* Remove default list styling */
-    padding: 0;
-}
-
-li {
-    margin: 10px 0;
+/* Responsive Design */
+@media (max-width: 768px) {
+    nav {
+        flex-direction: column;
+        align-items: center;
+    }
+    .floating-buttons {
+        flex-direction: column;
+        align-items: center;
+    }
 }
