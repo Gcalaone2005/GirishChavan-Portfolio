@@ -9,6 +9,24 @@ body {
     scroll-behavior: smooth;
 }
 
+@media (prefers-color-scheme: light) {
+    body {
+        background-color: #ffffff;
+        color: #000;
+    }
+    nav {
+        background: rgba(255, 255, 255, 0.95);
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    }
+    nav a {
+        color: black;
+    }
+    section {
+        background-color: #f4f4f4;
+        color: #000;
+    }
+}
+
 /* Navigation Styles */
 nav {
     display: flex;
