@@ -1,10 +1,42 @@
 /* General Styles */
 body {
     font-family: Arial, sans-serif;
-    background-color: #ffffff;
-    color: #333;
     margin: 0;
     padding: 0;
+    background-color: #444;
+    color: white;
+    text-align: center;
+}
+
+/* Header Section */
+h1 {
+    font-size: 48px;
+    font-weight: bold;
+}
+
+h1 span {
+    color: #ffc107;
+}
+
+/* Resume Download Button */
+.resume-btn {
+    display: inline-block;
+    padding: 12px 25px;
+    background-color: #007bff; /* Blue color */
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    text-decoration: none;
+    border-radius: 6px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    border: none;
+    cursor: pointer;
+}
+
+.resume-btn:hover {
+    background-color: #0056b3; /* Darker Blue */
+    transform: scale(1.05);
 }
 
 /* Fixed Navigation Bar */
