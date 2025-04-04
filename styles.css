@@ -5,33 +5,30 @@ body {
     color: #333;
     margin: 0;
     padding: 0;
-    padding-top: 60px; /* Offset for fixed navbar */
+    padding-top: 100px; /* Offset for fixed navbar */
     scroll-behavior: smooth;
 }
 
-/* Header Styles */
-header {
-    background-color: #222;
-    padding: 10px 0;
-    text-align: center;
-    position: fixed;
-    width: 100%;
-    top: 0;
-    z-index: 1000;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-}
-
+/* Navigation Styles */
 nav {
     display: flex;
-    justify-content: center;
-    gap: 20px;
-    padding: 15px 0;
-    background: rgba(34, 34, 34, 0.9); /* Slight opacity */
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 30px;
+    background: rgba(255, 165, 0, 0.9);
     backdrop-filter: blur(5px);
     position: fixed;
     top: 0;
     width: 100%;
     z-index: 1000;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+nav .brand {
+    font-size: 20px;
+    font-weight: bold;
+    color: white;
+    text-transform: uppercase;
 }
 
 nav a {
@@ -40,39 +37,60 @@ nav a {
     font-weight: bold;
     padding: 10px 15px;
     transition: all 0.3s ease-in-out;
-    border-radius: 5px;
+    border-radius: 8px;
+    margin-left: 10px;
 }
 
 nav a:hover {
+    background-color: white;
     color: orange;
-    background: rgba(255, 165, 0, 0.2);
-    box-shadow: 0px 4px 10px rgba(255, 165, 0, 0.5);
-    transform: scale(1.05);
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
 }
 
-/* Floating Buttons Section */
-.floating-buttons {
+/* Hero Section */
+.hero {
+    position: relative;
+    background: url('your-image.jpg') center/cover no-repeat;
+    height: 100vh;
     display: flex;
     justify-content: center;
-    gap: 15px;
-    margin-top: 80px;
-}
-
-.floating-buttons a {
-    background-color: orange;
+    align-items: center;
+    text-align: center;
     color: white;
-    font-weight: bold;
-    text-decoration: none;
-    padding: 10px 20px;
-    border-radius: 10px;
-    transition: all 0.3s ease-in-out;
-    box-shadow: 0px 4px 10px rgba(255, 165, 0, 0.5);
 }
 
-.floating-buttons a:hover {
+.hero .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 0;
+}
+
+.hero-content {
+    position: relative;
+    z-index: 1;
+}
+
+.hero-content a {
+    background-color: white;
+    color: orange;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 8px;
+    font-weight: bold;
+    transition: all 0.3s ease-in-out;
+    box-shadow: 0 4px 10px rgba(255, 165, 0, 0.5);
+}
+
+.hero-content a:hover {
     background-color: #e69500;
+    color: white;
     transform: translateY(-3px);
-    box-shadow: 0px 6px 15px rgba(255, 165, 0, 0.7);
+    box-shadow: 0 6px 15px rgba(255, 165, 0, 0.7);
 }
 
 /* Section Styles */
