@@ -16,6 +16,7 @@ header {
     width: 100%;
     top: 0;
     z-index: 1000;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
 nav {
@@ -23,6 +24,12 @@ nav {
     justify-content: center;
     gap: 20px;
     padding: 10px 0;
+    background: rgba(34, 34, 34, 0.9); /* Slight opacity */
+    backdrop-filter: blur(5px);
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
 }
 
 nav a {
@@ -30,11 +37,15 @@ nav a {
     text-decoration: none;
     font-weight: bold;
     padding: 10px 15px;
-    transition: 0.3s;
+    transition: all 0.3s ease-in-out;
+    border-radius: 5px;
 }
 
 nav a:hover {
     color: orange;
+    background: rgba(255, 165, 0, 0.2);
+    box-shadow: 0px 4px 10px rgba(255, 165, 0, 0.5);
+    transform: scale(1.05);
 }
 
 /* Floating Button Section */
@@ -52,11 +63,14 @@ nav a:hover {
     text-decoration: none;
     padding: 10px 20px;
     border-radius: 10px;
-    transition: 0.3s;
+    transition: all 0.3s ease-in-out;
+    box-shadow: 0px 4px 10px rgba(255, 165, 0, 0.5);
 }
 
 .floating-buttons a:hover {
     background-color: #e69500;
+    transform: translateY(-3px);
+    box-shadow: 0px 6px 15px rgba(255, 165, 0, 0.7);
 }
 
 /* Section Styles */
