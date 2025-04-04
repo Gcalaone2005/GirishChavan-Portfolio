@@ -1,80 +1,39 @@
 /* General Styles */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
 body {
     font-family: Arial, sans-serif;
-    background-color: #f4f4f4; /* Light background for contrast */
-    color: #333;
-}
-
-/* Fixed Navigation Bar */
-nav {
-    position: fixed;
-    top: 0;
-    width: 100%;
-    background-color: #222; /* Dark navbar */
-    display: flex;
-    justify-content: center;
-    gap: 20px;
-    padding: 15px 0;
-    z-index: 1000;
-    box-shadow: 0 4px 6px rgba(0,0,0,0.3);
-}
-
-nav a {
-    color: #fff;
-    text-decoration: none;
-    font-weight: bold;
-    padding: 8px 16px;
-    border-radius: 4px;
-    transition: background-color 0.3s, transform 0.2s;
-}
-
-nav a:hover {
-    background-color: #444;
-    transform: scale(1.05);
-    opacity: 0.9;
+    margin: 0;
+    padding: 0;
+    background-color: #444; /* Dark gray background */
+    color: white;
+    text-align: center;
 }
 
 /* Header Section */
-.hero {
-    background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('your-image.jpg') center/cover no-repeat;
-    height: 100vh;
-    color: white;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    padding: 100px 20px 20px;
+h1 {
+    font-size: 48px;
+    font-weight: bold;
 }
 
-.hero-content h1 {
-    font-size: 3rem;
+h1 span {
+    color: #ffc107; /* Yellow color for name */
 }
 
-.hero-content h1 span {
-    color: #ffc107;
-}
-
-.hero-content p {
-    font-size: 1.2rem;
+/* Subtitle */
+p {
+    font-size: 18px;
     margin-top: 10px;
 }
 
 /* Resume Download Button */
-.download-btn {
+.resume-btn {
     display: inline-block;
-    padding: 12px 25px;
-    background-color: #007bff;
+    padding: 15px 30px;
+    background-color: #ff9800; /* Orange color to match the reference */
     color: white;
-    font-size: 16px;
+    font-size: 18px;
     font-weight: bold;
     text-decoration: none;
-    border-radius: 6px;
+    border-radius: 8px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
     transition: background-color 0.3s ease, transform 0.2s ease;
     border: none;
@@ -82,84 +41,49 @@ nav a:hover {
     margin-top: 20px;
 }
 
-.download-btn:hover {
-    background-color: #0056b3;
+.resume-btn:hover {
+    background-color: #e68900; /* Slightly darker orange on hover */
     transform: scale(1.05);
 }
 
-/* Sections */
-section {
-    max-width: 800px;
-    margin: 80px auto;
-    background-color: white;
-    padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
-    scroll-margin-top: 100px;
-    transition: transform 0.3s ease;
+/* Container for main content */
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
 }
 
-section:hover {
-    transform: scale(1.01);
-}
-
-h2 {
-    color: #ff6600;
-    margin-bottom: 10px;
-}
-
-ul {
-    list-style: none;
-    padding: 0;
-}
-
-li {
-    margin: 10px 0;
-}
-
-/* Contact Section Links */
-#contact a {
-    color: #007bff;
-    text-decoration: none;
-}
-
-#contact a:hover {
-    text-decoration: underline;
-}
-
-/* Footer */
-footer {
+/* Navigation Bar */
+.navbar {
     background-color: #222;
-    color: #ccc;
+    padding: 15px 0;
     text-align: center;
-    padding: 20px 10px;
-    margin-top: 50px;
 }
 
-/* Responsive Design */
-@media (max-width: 768px) {
-    nav {
-        flex-wrap: wrap;
-        gap: 10px;
-    }
-
-    .hero-content h1 {
-        font-size: 2rem;
-    }
-
-    .download-btn {
-        padding: 10px 20px;
-        font-size: 14px;
-    }
+.navbar a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: bold;
+    margin: 0 15px;
+    transition: color 0.3s ease;
 }
 
-@media (max-width: 480px) {
-    .hero-content h1 {
-        font-size: 1.5rem;
-    }
+.navbar a:hover {
+    color: #ff9800;
+}
 
-    nav a {
-        font-size: 14px;
-        padding: 6px 12px;
-    }
+/* Sections */
+.section {
+    background: white;
+    color: #ff9800;
+    padding: 40px;
+    margin: 20px auto;
+    width: 80%;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    font-size: 24px;
+    font-weight: bold;
 }
