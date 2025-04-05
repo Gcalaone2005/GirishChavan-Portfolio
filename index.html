@@ -5,11 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <title>Girish Chavan - Portfolio</title>
     <link rel="stylesheet" href="styles.css" />
+   
 </head>
 <body>
 
     <header class="hero">
-        <div class="overlay"></div>
         <div class="hero-content">
             <h1>Hello, I'm <span>Girish Chavan</span></h1>
             <p>Welcome to my portfolio. Explore my work and passions!</p>
@@ -21,6 +21,7 @@
             <a href="#hobbies">Hobbies</a>
             <a href="#about">About</a>
             <a href="#interests">Interests</a>
+            <a href="#projects">Projects</a>
             <a href="#contact">Contact</a>
         </nav>
     </header>
@@ -36,7 +37,7 @@
 
     <section id="hobbies">
         <h2>Hobbies</h2>
-        <ul>
+        <ul >
             <li>Listening to Music</li>
             <li>Sketching</li>
             <li>Watching Historical Films</li>
@@ -55,20 +56,22 @@
 
     <section id="projects">
         <h2>Projects</h2>
-        <div class="project">
-            <h3>LedgerLive - Store Inventory Management System (Ongoing)</h3>
-            <ul>
-                <li>Developing a system for inventory tracking & sales management.</li>
-                <li>Covered system design, database models, and features.</li>
-                <li>Technologies: Python (Flask/Django), MySQL, HTML, CSS, JavaScript.</li>
-            </ul>
-        </div>
-        <div class="project">
-            <h3>McLaren Supercars Automotives Website (Completed)</h3>
-            <ul>
-                <li>Built a car dealership website using HTML & CSS.</li>
-                <li>Designed a responsive UI with product showcase.</li>
-            </ul>
+        <div class="projects">
+            <div class="project">
+                <h3>LedgerLive - Store Inventory Management System (Ongoing)</h3>
+                <ul>
+                    <li>Developing a system for inventory tracking & sales management.</li>
+                    <li>Covered system design, database models, and features.</li>
+                    <li>Technologies: Python (Flask/Django), MySQL, HTML, CSS, JavaScript.</li>
+                </ul>
+            </div>
+            <div class="project">
+                <h3>McLaren Supercars Automotives Website (Completed)</h3>
+                <ul>
+                    <li>Built a car dealership website using HTML & CSS.</li>
+                    <li>Designed a responsive UI with product showcase.</li>
+                </ul>
+            </div>
         </div>
     </section>
 
@@ -83,28 +86,13 @@
         <div class="footer-content">
             <p>© 2025 Girish Chavan | All Rights Reserved</p>
             <p>Designed by Girish Chavan</p>
+            <div class="social-icons">
+                <a href="https://twitter.com/yourprofile" target="_blank">Twitter</a>
+                <a href="https://github.com/yourprofile" target="_blank">GitHub</a>
+                <a href="https://linkedin.com/in/girish-chavan-8a0a00284" target="_blank">LinkedIn</a>
+            </div>
         </div>
     </footer>
-
-    <style>
-        .resume-btn {
-            display: inline-block;
-            padding: 10px 20px;
-            background-color: #ff9800;
-            color: white;
-            text-decoration: none;
-            font-weight: bold;
-            border-radius: 5px;
-            margin-top: 10px;
-            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-            transition: background-color 0.3s ease, transform 0.2s ease;
-        }
-
-        .resume-btn:hover {
-            background-color: #e68900;
-            transform: scale(1.05);
-        }
-    </style>
 
 </body>
 </html>
