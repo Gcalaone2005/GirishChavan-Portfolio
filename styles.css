@@ -1,132 +1,112 @@
-/* General Styles */
-body {
-    font-family: Arial, sans-serif;
-    background-color: #ffffff;
-    color: #333;
-    margin: 0;
-    padding: 0;
-}
+ <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
 
-/* Fixed Navigation Bar */
-.navbar {
-    position: fixed;
-    top: 0;
-    width: 100%;
-    background-color: #222;
-    z-index: 999;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
-}
+        /* Navbar Styles */
+        .navbar {
+            background-color: #333;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
 
-nav {
-    display: flex;
-    justify-content: center;
-    gap: 20px;
-    padding: 15px 0;
-    flex-wrap: wrap;
-}
+        .navbar nav {
+            display: flex;
+            justify-content: center;
+            padding: 10px;
+        }
 
-nav a {
-    color: #ffa500;
-    text-decoration: none;
-    font-weight: bold;
-    transition: color 0.3s, transform 0.2s;
-}
+        .navbar a {
+            color: white;
+            padding: 14px 20px;
+            text-decoration: none;
+            text-align: center;
+        }
 
-nav a:hover {
-    color: #fff;
-    transform: scale(1.05);
-}
+        .navbar a:hover {
+            background-color: #575757;
+        }
 
-/* Hero Section */
-.hero {
-    background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('background.jpg') no-repeat center center/cover;
-    color: white;
-    text-align: center;
-    padding: 100px 20px 60px;
-    position: relative;
-    margin-top: 60px; /* offset for fixed nav */
-}
+        /* Hero Section */
+        .hero {
+            position: relative;
+            height: 100vh;
+            background: url('your-image-url.jpg') no-repeat center center/cover; /* Add your background image */
+            color: white;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+        }
 
-.hero-content h1 span {
-    color: #ffa500;
-}
+        .hero-content {
+            z-index: 1;
+        }
 
-/* Section Styles */
-section {
-    max-width: 800px;
-    margin: 30px auto;
-    background-color: #fff;
-    padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s;
-}
+        /* Section Styles */
+        section {
+            padding: 60px 20px;
+            text-align: center;
+        }
 
-section:hover {
-    transform: scale(1.01);
-}
+        h2 {
+            margin-bottom: 20px;
+        }
 
-/* Section Headers */
-h2 {
-    color: #ff9800;
-    margin-bottom: 10px;
-}
+        /* Project Cards */
+        .projects {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+        }
 
-/* Lists */
-ul {
-    list-style-type: none;
-    padding: 0;
-}
+        .project {
+            background: #f9f9f9;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            padding: 20px;
+            width: 300px;
+            transition: transform 0.3s;
+        }
 
-li {
-    margin: 10px 0;
-}
+        .project:hover {
+            transform: scale(1.05);
+        }
 
-/* Paragraph */
-p {
-    line-height: 1.6;
-}
+        /* Resume Button */
+        .resume-btn {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #ff9800;
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+            border-radius: 5px;
+            margin-top: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            transition: background-color 0.3s ease, transform 0.2s ease;
+        }
 
-/* Footer */
-footer {
-    background-color: #333;
-    color: white;
-    text-align: center;
-    padding: 15px 0;
-    margin-top: 40px;
-}
+        .resume-btn:hover {
+            background-color: #e68900;
+            transform: scale(1.05);
+        }
 
-/* Resume Button (if reused here) */
-.resume-btn {
-    display: inline-block;
-    padding: 10px 20px;
-    background-color: #ff9800;
-    color: white;
-    text-decoration: none;
-    font-weight: bold;
-    border-radius: 5px;
-    margin-top: 10px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    transition: background-color 0.3s ease, transform 0.2s ease;
-}
+        /* Footer Styles */
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 20px 0;
+        }
 
-.resume-btn:hover {
-    background-color: #e68900;
-    transform: scale(1.05);
-}
-
-/* Responsive Design */
-@media screen and (max-width: 768px) {
-    nav {
-        flex-direction: column;
-        gap: 10px;
-    }
-
-    .hero {
-        padding: 80px 15px 50px;
-    }
-
-    section {
-        margin: 20px 10px;
-    }
-}
+        .social-icons a {
+            color: white;
+            margin: 0 10px;
+            text-decoration: none;
+        }
+    </style>
