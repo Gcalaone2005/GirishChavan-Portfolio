@@ -1,98 +1,191 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-    <title>Girish Chavan - Portfolio</title>
-    <link rel="stylesheet" href="styles.css" />
-   
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Girish Chavan - Portfolio</title>
+  <link rel="stylesheet" href="styles.css" />
+  <style>
+    /* Dark theme base */
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #0f0f20;
+      color: white;
+    }
+
+    .navbar {
+      background-color: #0b0b2e;
+      padding: 20px;
+      text-align: right;
+    }
+
+    .navbar nav a {
+      color: white;
+      margin: 0 15px;
+      text-decoration: none;
+      font-weight: 500;
+    }
+
+    .hero {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      text-align: center;
+      background-color: #0f0f20;
+      padding: 0 20px;
+    }
+
+    .hero h1 {
+      font-size: 3rem;
+      margin: 0;
+    }
+
+    .hero h1 span {
+      color: #a855f7;
+    }
+
+    .typing-text {
+      font-size: 2rem;
+      margin-top: 10px;
+      color: #a855f7;
+      font-weight: bold;
+      border-right: 2px solid #a855f7;
+      white-space: nowrap;
+      overflow: hidden;
+      width: 0;
+      animation: typing 4s steps(40, end) forwards, blink .75s step-end infinite;
+    }
+
+    @keyframes typing {
+      from { width: 0; }
+      to { width: 100%; }
+    }
+
+    @keyframes blink {
+      50% { border-color: transparent; }
+    }
+
+    .hero-buttons {
+      margin-top: 20px;
+    }
+
+    .hero-buttons a {
+      background-color: #d946ef;
+      color: white;
+      padding: 12px 20px;
+      border-radius: 6px;
+      margin: 0 10px;
+      text-decoration: none;
+      font-weight: 600;
+      transition: background 0.3s ease;
+    }
+
+    .hero-buttons a:hover {
+      background-color: #a855f7;
+    }
+
+    section {
+      padding: 40px 20px;
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      background-color: #0b0b2e;
+    }
+
+    .social-icons a {
+      color: #a855f7;
+      margin: 0 10px;
+      text-decoration: none;
+    }
+  </style>
 </head>
 <body>
 
-    <header class="hero">
-        <div class="hero-content">
-            <h1>Hello, I'm <span>Girish Chavan</span></h1>
-            <p>Welcome to my portfolio. Explore my work and passions!</p>
-        </div>
-    </header>
+  <header class="navbar">
+    <nav>
+      <a href="#about">About</a>
+      <a href="#hobbies">Hobbies</a>
+      <a href="#interests">Interests</a>
+      <a href="#projects">Projects</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
 
-    <header class="navbar">
-        <nav>
-            <a href="#hobbies">Hobbies</a>
-            <a href="#about">About</a>
-            <a href="#interests">Interests</a>
-            <a href="#projects">Projects</a>
-            <a href="#contact">Contact</a>
-        </nav>
-    </header>
+  <section class="hero">
+    <h1>Hi, My Name is <span>Girish Chavan</span></h1>
+    <div class="typing-text">Aspiring Full Stack Developer...</div>
+    <div class="hero-buttons">
+      <a href="ATSResume.pdf" download>Download Resume</a>
+      <a href="https://github.com/Gcalaone2005/GirishChavanPortfolio" target="_blank">Visit GitHub</a>
+    </div>
+  </section>
 
-    <section>
-        <a href="ATSResume.pdf" download class="resume-btn">Download Resume</a>
-    </section>
+  <section id="about">
+    <h2>About Me</h2>
+    <p>Hi, I'm Girish Chavan. Aspiring Full Stack Developer with expertise in Web Development, DBMS, and AI tools...</p>
+  </section>
 
-    <section id="about">
-        <h2>About Me</h2>
-        <p>Hi, I'm Girish Chavan. Aspiring Full Stack Developer with expertise in Web Development, DBMS, and AI tools...</p>
-    </section>
+  <section id="hobbies">
+    <h2>Hobbies</h2>
+    <ul>
+      <li>Listening to Music</li>
+      <li>Sketching</li>
+      <li>Watching Historical Films</li>
+    </ul>
+  </section>
 
-    <section id="hobbies">
-        <h2>Hobbies</h2>
-        <ul >
-            <li>Listening to Music</li>
-            <li>Sketching</li>
-            <li>Watching Historical Films</li>
-        </ul>
-    </section>
+  <section id="interests">
+    <h2>Interests</h2>
+    <ul>
+      <li>Volunteering at Events</li>
+      <li>Web Development</li>
+      <li>App Development</li>
+      <li>History Enthusiast</li>
+    </ul>
+  </section>
 
-    <section id="interests">
-        <h2>Interests</h2>
+  <section id="projects">
+    <h2>Projects</h2>
+    <div class="projects">
+      <div class="project">
+        <h3>LedgerLive - Store Inventory Management System (Ongoing)</h3>
         <ul>
-            <li>Volunteering at Events</li>
-            <li>Web Development</li>
-            <li>App Development</li>
-            <li>History Enthusiast</li>
+          <li>Developing a system for inventory tracking & sales management.</li>
+          <li>Covered system design, database models, and features.</li>
+          <li>Technologies: Python (Flask/Django), MySQL, HTML, CSS, JavaScript.</li>
         </ul>
-    </section>
+      </div>
+      <div class="project">
+        <h3>McLaren Supercars Automotives Website (Completed)</h3>
+        <ul>
+          <li>Built a car dealership website using HTML & CSS.</li>
+          <li>Designed a responsive UI with product showcase.</li>
+        </ul>
+      </div>
+    </div>
+  </section>
 
-    <section id="projects">
-        <h2>Projects</h2>
-        <div class="projects">
-            <div class="project">
-                <h3>LedgerLive - Store Inventory Management System (Ongoing)</h3>
-                <ul>
-                    <li>Developing a system for inventory tracking & sales management.</li>
-                    <li>Covered system design, database models, and features.</li>
-                    <li>Technologies: Python (Flask/Django), MySQL, HTML, CSS, JavaScript.</li>
-                </ul>
-            </div>
-            <div class="project">
-                <h3>McLaren Supercars Automotives Website (Completed)</h3>
-                <ul>
-                    <li>Built a car dealership website using HTML & CSS.</li>
-                    <li>Designed a responsive UI with product showcase.</li>
-                </ul>
-            </div>
-        </div>
-    </section>
+  <section id="contact">
+    <h2>Contact Me</h2>
+    <p>Phone: <a href="tel:7020054957">7020054957</a></p>
+    <p>Email: <a href="mailto:officialgirishchavan2005@gmail.com">officialgirishchavan2005@gmail.com</a></p>
+    <p>LinkedIn: <a href="https://www.linkedin.com/in/girish-chavan-8a0a00284" target="_blank">linkedin.com/in/girish-chavan</a></p>
+  </section>
 
-    <section id="contact">
-        <h2>Contact Me</h2>
-        <p>Phone: <a href="tel:7020054957">7020054957</a></p>
-        <p>Email: <a href="mailto:officialgirishchavan2005@gmail.com">officialgirishchavan2005@gmail.com</a></p>
-        <p>LinkedIn: <a href="https://www.linkedin.com/in/girish-chavan-8a0a00284" target="_blank">linkedin.com/in/girish-chavan</a></p>
-    </section>
-
-    <footer>
-        <div class="footer-content">
-            <p>© 2025 Girish Chavan | All Rights Reserved</p>
-            <p>Designed by Girish Chavan</p>
-            <div class="social-icons">
-                <a href="https://twitter.com/yourprofile" target="_blank">Twitter</a>
-                <a href="https://github.com/yourprofile" target="_blank">GitHub</a>
-                <a href="https://linkedin.com/in/girish-chavan-8a0a00284" target="_blank">LinkedIn</a>
-            </div>
-        </div>
-    </footer>
+  <footer>
+    <p>© 2025 Girish Chavan | All Rights Reserved</p>
+    <p>Designed by Girish Chavan</p>
+    <div class="social-icons">
+      <a href="https://twitter.com/yourprofile" target="_blank">Twitter</a>
+      <a href="https://github.com/yourprofile" target="_blank">GitHub</a>
+      <a href="https://linkedin.com/in/girish-chavan-8a0a00284" target="_blank">LinkedIn</a>
+    </div>
+  </footer>
 
 </body>
 </html>
