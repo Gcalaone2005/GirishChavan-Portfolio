@@ -4,7 +4,16 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Girish Chavan - Portfolio</title>
+<!-- Font Awesome for icons -->
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+<!-- AOS Animation (if you're using it) -->
+<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+  AOS.init();
+</script>
+
 
   <!-- Bootstrap CSS -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet">
@@ -198,54 +207,52 @@
   </section>
 
 <!-- Contact Section -->
-<section id="contact" class="container-fluid py-5" style="background-color: #1a1a1a; color: white;" data-aos="fade-up">
-  <h2 class="text-center mb-2 fw-bold text-warning">Contact Me</h2>
-  <h1 class="text-center display-4 text-muted fw-bold" style="opacity: 0.05; margin-top: -20px;">Contact</h1>
-  <p class="text-center mb-5 text-light">Below are the details to reach out to me!</p>
+<section id="contact" class="py-5" style="background-color: #000; color: white;" data-aos="fade-up">
+  <div class="container">
+    <h2 class="text-center fw-bold" style="font-size: 2.5rem;">Contact Me</h2>
+    <h1 class="text-center display-1 fw-bold" style="opacity: 0.05; margin-top: -30px; font-weight: 900;">Contact</h1>
+    <p class="text-center text-muted mb-5">Below are the details to reach out to me!</p>
 
-  <div class="row text-center justify-content-center">
-    <!-- Address -->
-    <div class="col-md-3 mb-4">
-      <div class="p-4 rounded-circle bg-dark mx-auto shadow" style="width:100px; height:100px;">
-        <i class="fas fa-map-signs fa-2x text-warning"></i>
+    <div class="row text-center justify-content-center">
+      <!-- Address -->
+      <div class="col-md-3 mb-4">
+        <div class="mx-auto bg-dark rounded-circle d-flex justify-content-center align-items-center" style="width: 100px; height: 100px;">
+          <i class="fas fa-map-signs fa-2x text-warning"></i>
+        </div>
+        <h6 class="mt-3 text-uppercase fw-bold">Address</h6>
+        <p class="text-muted">Pune, India</p>
       </div>
-      <h5 class="mt-3 text-light">ADDRESS</h5>
-      <p class="text-muted">Pune, India</p>
-    </div>
 
-    <!-- Phone -->
-    <div class="col-md-3 mb-4">
-      <div class="p-4 rounded-circle bg-dark mx-auto shadow" style="width:100px; height:100px;">
-        <i class="fas fa-phone-alt fa-2x text-warning"></i>
+      <!-- Contact Number -->
+      <div class="col-md-3 mb-4">
+        <div class="mx-auto bg-dark rounded-circle d-flex justify-content-center align-items-center" style="width: 100px; height: 100px;">
+          <i class="fas fa-phone-alt fa-2x text-warning"></i>
+        </div>
+        <h6 class="mt-3 text-uppercase fw-bold">Contact Number</h6>
+        <p class="text-muted">+91 70200 54957</p>
       </div>
-      <h5 class="mt-3 text-light">CONTACT NUMBER</h5>
-      <p><a href="tel:7020054957" class="text-decoration-none text-light">+91 70200 54957</a></p>
-    </div>
 
-    <!-- Email -->
-    <div class="col-md-3 mb-4">
-      <div class="p-4 rounded-circle bg-dark mx-auto shadow" style="width:100px; height:100px;">
-        <i class="fas fa-paper-plane fa-2x text-warning"></i>
+      <!-- Email Address -->
+      <div class="col-md-3 mb-4">
+        <div class="mx-auto bg-dark rounded-circle d-flex justify-content-center align-items-center" style="width: 100px; height: 100px;">
+          <i class="fas fa-paper-plane fa-2x text-warning"></i>
+        </div>
+        <h6 class="mt-3 text-uppercase fw-bold">Email Address</h6>
+        <p class="text-muted">officialgirishchavan2005@gmail.com</p>
       </div>
-      <h5 class="mt-3 text-light">EMAIL ADDRESS</h5>
-      <p><a href="mailto:officialgirishchavan2005@gmail.com" class="text-decoration-none text-light">officialgirishchavan2005@gmail.com</a></p>
-    </div>
 
-    <!-- Resume -->
-    <div class="col-md-3 mb-4">
-      <div class="p-4 rounded-circle bg-dark mx-auto shadow" style="width:100px; height:100px;">
-        <i class="fas fa-globe fa-2x text-warning"></i>
+      <!-- Download Resume -->
+      <div class="col-md-3 mb-4">
+        <div class="mx-auto bg-dark rounded-circle d-flex justify-content-center align-items-center" style="width: 100px; height: 100px;">
+          <i class="fas fa-globe fa-2x text-warning"></i>
+        </div>
+        <h6 class="mt-3 text-uppercase fw-bold">Download Resume</h6>
+        <p class="text-muted"><a href="ATSResume.pdf" class="text-decoration-none text-warning">Resume Link</a></p>
       </div>
-      <h5 class="mt-3 text-light">DOWNLOAD RESUME</h5>
-      <p><a href="ATSResume.pdf" class="text-decoration-none text-light">Click to View</a></p>
     </div>
-  </div>
-
-  <div class="text-center mt-4">
-    <h5 class="text-light">Have a Question?</h5>
-    <a href="#contact" class="btn btn-outline-warning mt-2">CLICK HERE</a>
   </div>
 </section>
+
 
   <!-- Footer -->
   <footer class="text-center py-3 shadow-sm mt-5">
