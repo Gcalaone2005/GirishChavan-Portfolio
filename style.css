@@ -266,3 +266,69 @@ footer {
   background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='%23FFA500' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
 }
 
+/* SRWL Section */
+.srwl-section {
+  padding: 60px 10%;
+  background-color: #121212;
+  color: #f8f9fa;
+}
+
+.skills-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 40px;
+}
+
+.skill-block {
+  text-align: center;
+  max-width: 120px;
+}
+
+.circle-wrap {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  background: conic-gradient(#ff7a00 var(--percent), #2a2a2a 0%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  font-size: 18px;
+  margin: 0 auto 10px;
+  position: relative;
+  box-shadow: 0 4px 10px rgba(255, 122, 0, 0.2);
+  transition: transform 0.3s;
+}
+
+.circle-wrap::before {
+  content: '';
+  position: absolute;
+  width: 75px;
+  height: 75px;
+  background: #121212;
+  border-radius: 50%;
+  z-index: 0;
+}
+
+.circle-wrap span {
+  position: relative;
+  z-index: 1;
+  color: #ff7a00;
+}
+
+.skill-block p {
+  margin-top: 5px;
+  color: #ccc;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .skills-container {
+    gap: 30px;
+  }
+  .circle-wrap {
+    width: 90px;
+    height: 90px;
+  }
+}
