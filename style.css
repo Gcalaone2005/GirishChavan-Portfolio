@@ -265,7 +265,6 @@ footer {
 .navbar-toggler-icon {
   background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='%23FFA500' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
 }
-
 /* SRWL Section */
 .srwl-section {
   padding: 60px 10%;
@@ -333,34 +332,8 @@ footer {
   }
 }
 
-.interest-box {
-      background-color: #1e1e1e;
-      border-radius: 10px;
-      padding: 2rem;
-      text-align: center;
-      color: white;
-      transition: transform 0.3s ease;
-      height: 100%;
-    }
-    .interest-box:hover {
-      transform: translateY(-6px);
-      background-color: #2a2a2a;
-    }
-    .interest-box i {
-      font-size: 2.5rem;
-      color: #ff7a00;
-      margin-bottom: 15px;
-    }
-    .interest-title {
-      font-weight: bold;
-      font-size: 1.2rem;
-      margin-bottom: 10px;
-      color: #ff7a00;
-    }
-    .interest-desc {
-      color: #ccc;
-      font-size: 0.95rem;
-    }
+/* Shared box styles for skills and interests */
+.interest-box,
 .skill-box {
   background-color: #1e1e1e;
   border-radius: 10px;
@@ -370,21 +343,27 @@ footer {
   transition: transform 0.3s ease;
   height: 100%;
 }
+
+.interest-box:hover,
 .skill-box:hover {
   transform: translateY(-6px);
   background-color: #2a2a2a;
 }
+
+.interest-box i,
 .skill-box i {
   font-size: 2.5rem;
   color: #ff7a00;
   margin-bottom: 15px;
 }
+
 .interest-title {
   font-weight: bold;
   font-size: 1.2rem;
   margin-bottom: 10px;
   color: #ff7a00;
 }
+
 .interest-desc {
   color: #ccc;
   font-size: 0.95rem;
